@@ -7,12 +7,10 @@
 
 import Vapor
 
-final class User: Codable {
+final class User: Content {
     let email: Email
     
     init(email: Email) {
         self.email = email
     }
 }
-
-extension User: Content {}

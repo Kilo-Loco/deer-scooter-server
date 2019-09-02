@@ -7,7 +7,7 @@
 
 import Vapor
 
-final class Scooter {
+final class Scooter: Content {
     
     var id: String?
     var name: String
@@ -19,6 +19,4 @@ final class Scooter {
         self.location = location
     }
 }
-
-extension Scooter: Content {}
 
